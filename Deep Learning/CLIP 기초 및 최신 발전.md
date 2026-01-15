@@ -79,3 +79,31 @@ COTS는 CLIP의 two-stream 구조를 개선하여 세 가지 수준의 cross-mod
 - 70% FLOP 감소를 달성한 효율적인 아키텍처, 엣지 디바이스 배포에 적합.
 - Sparse MoE 기법은 대규모 모델의 경량화 전략으로 활용 가능.
 
+***
+
+### 1.2 도메인 특화 CLIP 변형
+****
+#### RemoteCLIP: A Vision Language Foundation Model for Remote Sensing
+
+```
+저자: Liu et al. 
+학회/저널: IEEE Transactions on Geoscience and Remote Sensing (TGRS) 2024
+논문링크: https://arxiv.org/abs/2306.11029
+인용: 2025-1-15 기준 536
+```
+
+**핵심 기여**
+- 원격 감지(remote sensing) 도메인에 특화된 CLIP 변형 모델.
+- 대규모 원격 감지 이미지-텍스트 데이터로 사전학습되어 위성 이미지 및 항공 사진의 cross-modal retrieval 에서 우수한 성능.
+- 일반 CLIP 대비 도메인 특화 데이터로 학습하여 원격 감지 작업에서 큰 성능 향상을 달성.
+
+**아키텍처 상세**
+- CLIP의 dual-encoder 구조를 유지.
+- 원격 감지 도메인에 최적화된 사전 학습 데이터 학습 전략을 사용.
+- Vision encoder는 고해상도 위성 이미지 처리에 적합하도록 조정됨.
+
+**가치**
+- 산업 모니터링 및 광역 감시 시스템에 적용 가능.
+- 드론 기반 감시, 대규모 시설 모니터링, 환경 감시 등
+- 도메인 특화 CLIP 개발의 참고 사례로 유용.
+
