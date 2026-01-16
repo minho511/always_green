@@ -107,3 +107,29 @@ COTS는 CLIP의 two-stream 구조를 개선하여 세 가지 수준의 cross-mod
 - 드론 기반 감시, 대규모 시설 모니터링, 환경 감시 등
 - 도메인 특화 CLIP 개발의 참고 사례로 유용.
 
+****
+> 2026-1-16
+
+#### LowCLIP: Adapting the CLIP Model Architecture for Low-Resource Languages in Multimodal Image Retrieval Task
+
+```
+저자: Asgarov et al. 
+학회/저널: arXiv 2024
+논문링크: https://arxiv.org/abs/2408.13909
+인용: 2025-1-16 기준 4
+```
+
+**핵심기여**
+- LowCLIP은 저자원 언어(low-resource languages)를 위한 CLIP 적응 모델.
+- Multilingual BERT와 경량 백본을 결합하여 제한된 데이터로 효과적인 이미지-텍스트 검색.
+- 저자원 언어 환경에서 CLIP의 성능을 크게 향상 시킴
+
+**아키텍처 상세**
+- LowCLIP은 multilingual BERT를 텍스트 인코더로 사용하고, 경량 vision backbone을 채택하여 효율성을 높임.
+- 저자원 언어 데이터의 특성을 고려한 학습 전략을 적용
+
+**가치**
+- 다국어 지원이 필요한 글로벌 감시 시스템에 적용 가능.
+- 특히 데이터가 부족한 언어 환경에서도 효과적인 비전-언어 검색 시스템을 구축할 수 있음.
+- 경량 백본 사용으로 엣지 디바이스 배포에도 적합
+

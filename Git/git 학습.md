@@ -213,3 +213,8 @@ backup/
 
 ## 커밋 메세지 수정하기
 
+```
+git commit --amend
+```
+
+****
