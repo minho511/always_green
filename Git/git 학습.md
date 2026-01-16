@@ -168,3 +168,48 @@ print("Hello, Minho!")
 ****
 
 >2026-1-16
+
+## Tracked & Untracked
+
+- 기존 `hello.py` 를 수정
+- 새로운 `hello2.py` 를 생성
+
+![[Pasted image 20260116095717.png]]
+
+`git status`
+-> `hello.py`는 수정되었고 아직 스테이지에 올라가지 않았음. **tracked**
+-> `hello2.py` 는 한 번도 버전 관리를 하지 않았기 때문에 추적하지 않음. **untracked**
+
+모두 스테이징
+![[Pasted image 20260116100023.png]]
+
+커밋
+![[Pasted image 20260116100121.png]]
+
+커밋에 관련된 파일까지 함께 살펴보려면 `git log --stat`
+
+![[Pasted image 20260116100326.png]]
+
+****
+
+## 버전을 만드는 과정에서 단계별 파일의 상태
+
+![[Pasted image 20260116104507.png]]
+
+****
+## 버전 관리에서 특정 파일과 디렉토리 제외하기
+
+## `.gitignore`
+
+.gitignore 파일 안에 버전 관리를 하지 않을 파일 또는 디렉토리 이름이나 파일 확장자를 입력
+
+```
+memo.txt
+backup/
+.swp
+```
+
+****
+
+## 커밋 메세지 수정하기
+
